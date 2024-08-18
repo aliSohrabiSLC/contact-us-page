@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1a2b3c 0%, #192742 100%);
+    color: #fff;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .form-section {
+    flex: 1 1 700px;
+    margin-right: 20px;
+  }
+  
+  .form-section h2 {
+    font-size: 2.5rem;
+    color: #ff4081;
+    /* font-size: 28px; */
+  }
+  
+  .form-section p {
+    color: #d1d1d1;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .input-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: calc(50% - 10px);
+    padding: 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2f3a4d;
+    color: #ffffff;
+  }
+  
+  textarea {
+    width: 49%;
+    height: 100px;
+    resize: none;
+  }
+  
+  .submit-btn {
+    padding: 15px 20px;
+    background-color: #ff4081;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #e73333;
+  }
+  
+  .success-message {
+    background-color: #c0c3c6;
+    width: 250px;
+    height: 30px;
+    padding: 4px 4px 0px 4px;
+    border-radius: 8px;
+    color: #c0c3c6;
+    margin-top: 10px;
+    display: none;
+  }
+  
+  .info-section {
+    background-color: #2f3a4d31;
+    margin-top: 80px;
+    flex: 1 1 160px;
+    height: 400px;
+    margin-left: 10px;
+    border-radius: 16px;
+    /* border: 1px solid #fff; */
+    padding: 5px 40px 30px 50px;
+  }
+  
+  .info-section h3 {
+    font-size: 2rem;
+    color: #ff4081;
+    margin-bottom: 10px;
+  }
+  
+  .info-section p {
+    margin-bottom: 10px;
+    color: #d1d1d1;
+  }
+  
+  .social-media a {
+    color: #ff4081;
+    text-decoration: none;
+    margin-right: 10px;
+    display: inline-block; /* Ensure the link can be transformed */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth zoom and color change */
+  }
+  
+  .social-media a:hover {
+    transform: scale(1.1); /* Zoom in on hover */
+    color: #ff77a9; /* Optional: change color on hover to enhance the effect */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .form-section,
+    .info-section {
+      flex: 1 1 100%;
+      margin-right: 0;
+      margin-left: 0;
+    }
+  
+    .input-row input[type="text"],
+    .input-row input[type="email"],
+    .input-row input[type="tel"] {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+  
